@@ -2,7 +2,7 @@ def arithmetic_arranger(problems,answer = False):
     first_operand = []
     second_operand = []
     operator = []
-    
+#     Splliting the entire problems into operands and operators ex: if "34 + 23" : it is split into 34 , + , 23 as first_operand ,operator, second_operand
     for problem in problems:
         elements = problem.split()
         first_operand.append(elements[0])
@@ -22,9 +22,16 @@ def arithmetic_arranger(problems,answer = False):
     for i in range(len(first_operand)):
         if len(first_operand[i]) > 4 or len(second_operand[i]) > 4:
             return "Error: Numbers cannot be more than four digits."
+        
     # check if no. of problems is greater than 5
     if len(problems) > 5:
         return "Error: Too many problems."
+    
+#       32         1      9999      523     First line
+#     +  8    - 3801    + 9999    -  49     Second line
+#     ----    ------    ------    -----     Third line
+#       40     -3800     19998      474     Fourth line
+    
     
     first_line = []
     second_line = []
