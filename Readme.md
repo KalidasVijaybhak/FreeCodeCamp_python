@@ -1,5 +1,5 @@
-Arithmetic Formater
-# Functions used in Aritmentic formater
+Arithmetic Formatter
+# Functions used in Aritmentic formatter
 The arithmetic_arranger() function uses the following functions:
 
 1.  split(): This function is a built-in method in Python that splits a string into a list of substrings based on a specified delimiter. In this code, it is used to split the input problems into individual pieces, which include the first operand, operator, and second operand.
